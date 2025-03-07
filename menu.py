@@ -20,10 +20,14 @@ def menu()
             print("2. Subtrair")
             print("3. Multiplicar")
             print("4. Dividir")
+            print("0. Sair")
 
             opcao = input("Digite a opção desejada: ")
 
-            elif opcao in ['1','2','3','4']:
+        if opcao == '0':
+            print("Saindo...")
+            break
+        elif opcao in ['1','2','3','4']:
             try:
                 a = float(input("Digite o primeiro número: "))
                 b = float(input("Digite o segundo número: "))
@@ -39,6 +43,9 @@ def menu()
                     print(f"O resultado da multiplicação é: {multiplicar(a, b)}")
                 elif opcao == '4':
                     print(f"O resultado da divisão é: {dividir(a, b)}")
+            else:
+                print("Opção inválida! Tente novamente.")
+
 
 
 
