@@ -46,9 +46,10 @@ def menu()
             else:
                 print("Opção inválida! Tente novamente.")
 
-
+# Chamando a função menu para iniciar o programa
+menu()
 
 
             
-            
+        
 
